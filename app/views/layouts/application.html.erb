@@ -1,39 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>disalle.co</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="jumbotron">
-  <nav class="navbar navbar-transparent" role="navigation">
-    <div class='container'>
-        <div class="navbar-header navbar-static-top">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <%= link_to 'disalle.co', root_path, class: 'navbar-brand' %>
-        </div>
-        <div class="collapse navbar-collapse" id="main-nav-collapse">
-          <ul class="nav navbar-nav navbar-center">
-            <li id="navLink"><%= link_to "About", about_path %></li>
-            <li id="navLink"><%= link_to "Work", "#" %></li>
-            <li id="navLink"><%= link_to "Writings", "#" %></li>
-            <li id="navLink"><%= link_to "Contact", "#" %></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div>
-  </nav>
-  <div class="jumbotron-text">
-    <br><br><h1>Bienvenue</h1>
-    <h3>Design | Development | Digital</h3>
-  </div>
-</div>
+  
 <%= yield %>
 
 </body>

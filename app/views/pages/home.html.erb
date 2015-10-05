@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <head>
+    
     <link rel="stylesheet" type="text/css" href="home.css.scss">
 
 </head>
 <body>
-    
-    
-
-        
+<div class="jumbotron jumbotron-home">
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class='container'>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to 'disalle.co', root_path, class: 'navbar-brand' %>
+    </div>
+    <div class="collapse navbar-collapse" id="main-nav-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Work", "#" %></li>
+        <li><%= link_to "Writings", "#" %></li>
+        <li><%= link_to "Contact", "#" %></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+</nav>
+    <div class="jumbotron-text">
+      <br>
+      <br>
+      <h2>Coty DiSalle</h2>
+      <h3>design</h3>
+      <h3>development</h3>
+      <h3>digital</h3>
+      <p>Elegant solutions for web and mobile.</p>
+    </div>
+  </div>
     
 <body>
 </html>
